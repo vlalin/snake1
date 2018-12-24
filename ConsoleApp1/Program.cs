@@ -10,7 +10,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Field field = new Field();
 
+            field.maps();
+
+            
+
+            Console.ReadKey();
         }
     }
 }
