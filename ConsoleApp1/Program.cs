@@ -12,10 +12,11 @@ namespace ConsoleApp1
         {
             Field field = new Field();
 
-            field.show_map();
+            Bonus bonus = new Bonus();
 
-            
-            
+            bonus.randomize_position(field.get_height(), field.get_width());
+
+            field.show_map(bonus);
 
             Console.ReadKey();
         }

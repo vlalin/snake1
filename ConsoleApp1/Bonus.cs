@@ -6,25 +6,40 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Bonus
+    public class Bonus
     {
         char bonus;
 
         int height_coordinat;
         int width_coordinat;
 
-        void randomize_position(int height, int width)
+        public void randomize_position(int height, int width)
         {
             Random rand = new Random();
-            height_coordinat = rand.Next(height - 1);
-            width_coordinat = rand.Next(width - 1);
+            height_coordinat = rand.Next(2,height - 2);
+            width_coordinat = rand.Next(2,width - 2);
         }
 
-        Bonus()
+        public Bonus()
         {
             height_coordinat = 1;
             width_coordinat = 1;
             bonus = '$';
+        }
+
+        public int get_height()
+        {
+            return this.height_coordinat;
+        }
+
+        public int get_width()
+        {
+            return this.width_coordinat;
+        }
+
+        public char get_symbol()
+        {
+            return this.bonus;
         }
     }
 
