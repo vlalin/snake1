@@ -8,13 +8,13 @@ namespace ConsoleApp1
 {
     public class Field
     {
-        int field_height = 23;
-        int fiels_width = 78;
+        int field_height;
+        int fiels_width;
 
-        char cell_symbol = ' ';
-        char wall_symbol = '#';
+        char cell_symbol;
+        char wall_symbol;
 
-        public void maps()
+        public void show_map()
         {
 
             for (int i = 0; i < field_height; i++)
@@ -34,5 +34,15 @@ namespace ConsoleApp1
                 Console.WriteLine("");
             }
         }
+
+        Field()
+        {
+            field_height = 23;
+            fiels_width = 78;
+
+            cell_symbol = ' ';
+            wall_symbol = '#';
+        }
+
     }
 }

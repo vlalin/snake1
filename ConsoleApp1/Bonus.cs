@@ -8,10 +8,10 @@ namespace ConsoleApp1
 {
     class Bonus
     {
-        char bonus = '$';
+        char bonus;
 
-        int height_coordinat = 0;
-        int width_coordinat = 0;
+        int height_coordinat;
+        int width_coordinat;
 
         void randomize_position(int height, int width)
         {
@@ -24,6 +24,7 @@ namespace ConsoleApp1
         {
             height_coordinat = 1;
             width_coordinat = 1;
+            bonus = '$';
         }
     }
 

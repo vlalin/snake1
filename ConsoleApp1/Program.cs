@@ -12,8 +12,9 @@ namespace ConsoleApp1
         {
             Field field = new Field();
 
-            field.maps();
+            field.show_map();
 
+            
             
 
             Console.ReadKey();
