@@ -35,7 +35,7 @@ namespace ConsoleApp1
             }
         }
 
-        Field()
+        public Field()
         {
             field_height = 23;
             fiels_width = 78;
