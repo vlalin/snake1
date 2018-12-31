@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp1
 {
     public class Field
-    { 
+    {
 
         int field_height;
         int fiels_width;
@@ -25,15 +25,7 @@ namespace ConsoleApp1
                 {
 
 
-                    if (i == field_height - 1 || g == fiels_width - 1
-                        || i == 0 || g == 0)
-                        Console.Write(wall_symbol);
-                    else if (i == bonus.get_height() && g == bonus.get_width())
-                    {
-                        Console.Write(bonus.get_symbol());
-                    }
-                    else
-                        Console.Write(cell_symbol);
+
 
                     foreach (var item in snake)
                     {
@@ -41,11 +33,24 @@ namespace ConsoleApp1
                         {
                             Console.Write(item.get_symbol());
                         }
+                        else
+                        {
+                            if (i == field_height - 1 || g == fiels_width - 1
+                                || i == 0 || g == 0)
+                                Console.Write(wall_symbol);
+                            else if (i == bonus.get_height() && g == bonus.get_width())
+                            {
+                                Console.Write(bonus.get_symbol());
+                            }
+                            else
+                                Console.Write(cell_symbol);
+                        }
+
                     }
                 }
                 Console.WriteLine("");
 
-                
+
             }
         }
 
