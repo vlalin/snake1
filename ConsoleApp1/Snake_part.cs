@@ -29,7 +29,10 @@ namespace ConsoleApp1
 
         public void move_up()
         {
-            height_coordinat_x--;
+            if (height_coordinat_x -1 > 0)
+            {
+                height_coordinat_x--;
+            }           
         }
 
         public void move_down()
@@ -39,7 +42,11 @@ namespace ConsoleApp1
 
         public void move_left()
         {
-            width_coordinat_y--;
+            if (width_coordinat_y -1 > 0)
+            {
+                width_coordinat_y--;
+            }
+            
         }
 
         public void move_right()
