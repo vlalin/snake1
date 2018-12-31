@@ -27,22 +27,22 @@ namespace ConsoleApp1
             this.width_coordinat_y = width_coordinat_y;
         }
 
-        void move_up()
+        public void move_up()
         {
             height_coordinat_x--;
         }
 
-        void move_down()
+        public void move_down()
         {
             height_coordinat_x++;
         }
 
-        void move_left()
+        public void move_left()
         {
             width_coordinat_y--;
         }
 
-        void move_right()
+        public void move_right()
         {
             width_coordinat_y++;
         }

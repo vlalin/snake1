@@ -24,9 +24,6 @@ namespace ConsoleApp1
                 for (int g = 0; g < fiels_width; g++)
                 {
 
-
-
-
                     foreach (var item in snake)
                     {
                         if (i == item.get_x() && g == item.get_y())
