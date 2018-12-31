@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Snake_part
+    public class Snake_part
     {
         char display_symbol;
 
         int height_coordinat_x;
         int width_coordinat_y;
 
-        Snake_part()
+        public Snake_part()
         {
             height_coordinat_x = 3;
             width_coordinat_y = 3;
             display_symbol = '*';
         }
 
-        Snake_part(char display_symbol, int height_coordinat_x, int width_coordinat_y)
+        public Snake_part(char display_symbol, int height_coordinat_x, int width_coordinat_y)
         {
             this.display_symbol = display_symbol;
             this.height_coordinat_x = height_coordinat_x;
@@ -46,6 +46,22 @@ namespace ConsoleApp1
         {
             width_coordinat_y++;
         }
+
+        public int get_x()
+        {
+            return this.height_coordinat_x;
+        }
+
+        public int get_y()
+        {
+            return this.width_coordinat_y;
+        }
+
+        public char get_symbol()
+        {
+            return this.display_symbol;
+        }
+
 
 
     }

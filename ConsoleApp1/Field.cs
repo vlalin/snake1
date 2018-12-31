@@ -15,7 +15,7 @@ namespace ConsoleApp1
         char cell_symbol;
         char wall_symbol;
 
-        public void show_map(Bonus bonus)
+        public void show_map(Bonus bonus, List<Snake_part> snake)
         {
 
             for (int i = 0; i < field_height; i++)
@@ -35,8 +35,17 @@ namespace ConsoleApp1
                     else
                         Console.Write(cell_symbol);
 
+                    foreach (var item in snake)
+                    {
+                        if (i == item.get_x() && g == item.get_y())
+                        {
+                            Console.Write(item.get_symbol());
+                        }
+                    }
                 }
                 Console.WriteLine("");
+
+                
             }
         }
 
