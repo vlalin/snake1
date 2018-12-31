@@ -38,7 +38,7 @@ namespace ConsoleApp1
                         break;
 
                     case "S":
-                        snake.ForEach(x => x.move_down());
+                        snake.ForEach(x => x.move_down(field.get_height() -1));
                         break;
 
                     case "A":
@@ -46,7 +46,7 @@ namespace ConsoleApp1
                         break;
 
                     case "D":
-                        snake.ForEach(x => x.move_right());
+                        snake.ForEach(x => x.move_right(field.get_width() -1));
                         break;
 
                     default:

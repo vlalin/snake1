@@ -35,9 +35,13 @@ namespace ConsoleApp1
             }           
         }
 
-        public void move_down()
+        public void move_down(int max_x)
         {
-            height_coordinat_x++;
+            if (height_coordinat_x + 1 < max_x )
+            {
+                height_coordinat_x++;
+            }
+            
         }
 
         public void move_left()
@@ -49,9 +53,12 @@ namespace ConsoleApp1
             
         }
 
-        public void move_right()
+        public void move_right(int max_y)
         {
-            width_coordinat_y++;
+            if (width_coordinat_y + 1 < max_y)
+            {
+                width_coordinat_y++;
+            }
         }
 
         public int get_x()
