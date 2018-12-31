@@ -23,6 +23,10 @@ namespace ConsoleApp1
 
                 for (int g = 0; g < fiels_width; g++)
                 {
+                    if (snake[0].get_x() == bonus.get_height() && snake[0].get_y() == bonus.get_width())
+                    {
+                        bonus.randomize_position(this.field_height, this.fiels_width);
+                    }
 
                     foreach (var item in snake)
                     {
